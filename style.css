@@ -32,49 +32,89 @@ body{
     background-size: cover;
 }
 /* header - */
+.header 
+{
+    height: 60px;
+    /* background: rgb(201, 198, 198); */
+}
 
+.header-logo a img
+{
+    height : 50px;
+    margin-left: 30px;
+    background-image: url("img/spacex-logo-black2.jpeg");
+    background-repeat :no-repeat;
+
+}
+ .main-header
+{
+    display: flex;
+} 
+.nav-main-menu ul
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+.nav-main-menu ul li
+{
+    margin-right : 20px
+    
+}
+.img-bar
+{
+    height :30px;
+    width :40px;
+    /* background-image: url("img/baricon-white.jpeg"); */
+}
+/*
 .main-header
 {
     width:100%;
     top : 0;
     left : 0;
-    height : 100px;
-    position: fixed;
-    z-index : 3;
+    height : 30px;
+    position: absolute;
+     z-index : 3; 
     display :flex;
     justify-content: space-evenly;
     align-items: center;
     text-transform: uppercase;
-    padding : 0 30px ;
+      padding : 0 10px ;  
 }
 
 
 .header-logo
 {
-    margin-left: 40px;
-    width: 250px;
-    height: auto ;
+    margin-right:50px; 
+    height: 100px; 
+     width: 300px; 
+   
     background-image: url("img/spacex-logo-black2.jpeg");
-    
     background-repeat :no-repeat;
 
 }
-
+/* 
 .desktop-main-menu
 {
-margin-right : 20px;
-}
+    margin-right : 20px;
+} 
 
 .desktop-main-menu ul
 {
     display: flex;
     justify-content: space-between;
 }
-.desktop-main-menu li{
-    margin-right :25px;
-    position: relative;
+
+.desktop-main-menu li {
+    margin-left :0px;
+     position: relative; 
     padding-bottom: 2px;
     width: 90px;
+}
+.desktop-main-menu li a{
+    padding-top: 30px;
+    font-size: 12px;
 }
 
 .desktop-main-menu  ul li a ::after
@@ -85,13 +125,13 @@ margin-right : 20px;
     left : 0;
     width: 100%;
     background: white;
-    transform: scaleX(0);/*visible text after <a> tag*/
-    transition: transform 0.6s cubic-bezier(0.19);/*transition on property anem transform*/
+    transform: scaleX(0);/*visible text after <a> tag*
+    transition: transform 0.6s cubic-bezier(0.19);/*transition on property anem transform*
 }
 
 .desktop-main-menu  ul li a :hover::after
 {
-    transform: scaleX(1); /*visible text  after <a> tag*/
+    transform: scaleX(1); /*visible text  after <a> tag*
 }
 
 
@@ -104,7 +144,7 @@ section {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     text-transform: uppercase;
     color: WHITE;
   }
